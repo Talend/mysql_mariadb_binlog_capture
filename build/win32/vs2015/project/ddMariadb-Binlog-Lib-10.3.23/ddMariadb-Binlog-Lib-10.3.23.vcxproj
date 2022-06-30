@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\source\opensource\ddBinlogLib.h" />
+    <ClInclude Include="..\..\..\..\..\ddMySqlBinLogCapture\ddBinlogLib.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\source\opensource\mariadb\10.3.23\client\ddmysqlbinlog.cc" />
+    <ClCompile Include="..\..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\patched-mySqlBinlog-10_3_23\ddmysqlbinlog.cc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}</ProjectGuid>
@@ -78,20 +78,20 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\mysys_ssl;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\sql;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\strings;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\zlib;$(SolutionDir)..\..\..\..\source\ddlib;$(SolutionDir)..\..\..\..\source\opensource;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\libmariadb\libmariadb\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys_ssl\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\dbug\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\zlib\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\strings\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\taocrypt\$(Configuration);$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\..\..\..\..\tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\mysys_ssl;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\sql;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\strings;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\zlib;$(SolutionDir)..\..\..\..\source\ddlib;$(SolutionDir)..\..\..\..\source\opensource;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\libmariadb\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\mysys\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\mysys_ssl\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\dbug\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\zlib\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\strings\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\extra\yassl\$(Configuration);$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\extra\yassl\taocrypt\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\mysys_ssl;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\sql;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\strings;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\zlib;$(SolutionDir)..\..\..\..\source\ddlib;$(SolutionDir)..\..\..\..\source\opensource;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\libmariadb\libmariadb\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys_ssl\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\dbug\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\zlib\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\strings\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\taocrypt\Release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\mariadb-10.3.23-build\\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\include;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\mysys_ssl;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\sql;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\strings;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\zlib;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb-Binlog-Lib\MariaDB_10_3_23\MariaDB-10.3.23-source\sql-common;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\libmariadb\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\mysys\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\mysys_ssl\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\dbug\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\zlib\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\strings\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\extra\yassl\Release;$(SolutionDir)..\lib\MariaDB_10_3_23\mariadb-10.3.23-build\extra\yassl\taocrypt\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -114,7 +114,7 @@
       <AdditionalDependencies>mariadbclient.lib;mysys.lib;mysys_ssl.lib;dbug.lib;zlib.lib;strings.lib;yassl.lib;taocrypt.lib;shlwapi.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(TargetName)$(TargetExt)
 
 </Command>
     </PostBuildEvent>
@@ -159,9 +159,9 @@
       <AdditionalDependencies>mariadbclient.lib;mysys.lib;mysys_ssl.lib;dbug.lib;zlib.lib;strings.lib;yassl.lib;taocrypt.lib;shlwapi.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)
-copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\$(TargetName)$(TargetExt)
-copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\ddBinlogLib.dll</Command>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(TargetName)$(TargetExt)
+
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

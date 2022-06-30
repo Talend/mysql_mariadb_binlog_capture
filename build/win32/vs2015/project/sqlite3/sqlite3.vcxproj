@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\source\opensource\sqlite\CppSQLite3.cpp" />
-    <ClCompile Include="..\..\..\..\..\source\opensource\sqlite\sqlite3.c" />
+    <ClCompile Include="..\..\..\..\..\ddMySqlBinLogCapture\patched-sqlite-wrapper-3.14.1\CppSQLite3.cpp" />
+    <ClCompile Include="..\..\..\..\..\ddMySqlBinLogCapture\patched-sqlite-wrapper-3.14.1\sqlite3.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\source\opensource\sqlite\CppSQLite3.h" />
-    <ClInclude Include="..\..\..\..\..\source\opensource\sqlite\sqlite3.h" />
-    <ClInclude Include="..\..\..\..\..\source\opensource\sqlite\sqlite3ext.h" />
+    <ClInclude Include="..\..\..\..\..\ddMySqlBinLogCapture\patched-sqlite-wrapper-3.14.1\CppSQLite3.h" />
+    <ClInclude Include="..\..\..\..\..\ddMySqlBinLogCapture\patched-sqlite-wrapper-3.14.1\sqlite3.h" />
+    <ClInclude Include="..\..\..\..\..\ddMySqlBinLogCapture\patched-sqlite-wrapper-3.14.1\sqlite3ext.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}</ProjectGuid>
@@ -79,12 +79,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -106,7 +106,7 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(TargetName).lib $(SolutionDir)..\lib\$(Configuration)\$(TargetName).lib
+      <Command>copy $(OutDir)$(TargetName).lib $(SolutionDir)..\lib\sqlite\$(TargetName).lib
 </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -142,7 +142,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(TargetName).lib $(SolutionDir)..\lib\$(Configuration)\$(TargetName).lib</Command>
+      <Command>copy $(OutDir)$(TargetName).lib $(SolutionDir)..\lib\sqlite\$(TargetName).lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

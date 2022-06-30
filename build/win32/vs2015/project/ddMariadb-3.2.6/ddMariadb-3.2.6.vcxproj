@@ -71,20 +71,20 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
-    <LibraryPath>$(SolutionDir)..\..\..\..\windows\win32\vs2015\lib\mariadb-connector-c-3.2.6;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)..\..\..\..\source\opensource\mariadb\connector-c-3.2.6\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)..\..\..\..\build\win32\vs2015\lib\mariadb-connector-c-3.2.6;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb\connector-c-3.2.6\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
-    <IncludePath>$(SolutionDir)..\..\..\..\source\opensource\mariadb\connector-c-3.2.6\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)..\..\..\..\windows\win32\vs2015\lib\mariadb-connector-c-3.2.6;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\tmp\build\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture;$(SolutionDir)..\..\..\..\ddMySqlBinLogCapture\ddMariadb\connector-c-3.2.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\..\..\build\win32\vs2015\lib\mariadb-connector-c-3.2.6;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -105,7 +105,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(TargetName)$(TargetExt)
 
 </Command>
     </PostBuildEvent>
@@ -144,9 +144,9 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)
-copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\$(TargetName)$(TargetExt)
-copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\$(TargetName)$(TargetExt)</Command>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(TargetName)$(TargetExt)
+
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -168,10 +168,10 @@ copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\$(TargetName)$
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\source\opensource\ddMariadb.cpp" />
+    <ClCompile Include="..\..\..\..\..\ddMySqlBinLogCapture\ddMariadb\ddMariadb.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\source\opensource\ddMariadb.h" />
+    <ClInclude Include="..\..\..\..\..\ddMySqlBinLogCapture\ddMariadb\ddMariadb.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

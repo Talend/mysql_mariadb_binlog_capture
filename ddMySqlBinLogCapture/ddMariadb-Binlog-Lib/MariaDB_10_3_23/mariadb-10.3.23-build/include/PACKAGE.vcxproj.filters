@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\DEVELOPPEMENT\METAMORPHOSES\V7\source_ext\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\CMakeFiles\d971776159d30d9e33e6cbab9f20e5cc\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{17BFFF75-652F-30C5-B6ED-F53CF32F5EE2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
