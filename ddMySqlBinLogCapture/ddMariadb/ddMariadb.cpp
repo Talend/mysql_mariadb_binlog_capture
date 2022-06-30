@@ -1,3 +1,19 @@
+/* Copyright (C) 2021-2022 Talend Inc. - www.talend.com
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Library General Public
+   License as published by the Free Software Foundation; either
+   version 2 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Library General Public License for more details.
+
+   You should have received a copy of the GNU Library General Public
+   License along with this library; if not, write to the Free
+   Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02111-1301, USA */
 //////////////////////////////////////////////////////////////////////////////////
 //
 //																			
@@ -7,7 +23,6 @@
 //																			
 //	PURPOSE				:Defines the exported functions for the DLL application.
 //																			
-//	MANUFACTURER		:Gamma Soft
 //
 //	DATE				:29/12/2011
 //
@@ -240,7 +255,7 @@ DDMYSQL_API long PASCAL MyGetAffectedRows(void *handle)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 // MyGetInfo
-// Retrieve à string providing information about the most recently executed statement.
+// Retrieve ï¿½ string providing information about the most recently executed statement.
 // Only for the statement listed here:
 // INSERT INTO ... SELECT ...						string format = Records: 100 Duplicates: 0 Warnings: 0
 // INSERT INTO ... VALUES (...), ((...),(...) ...	string format = Records: 3 Duplicates: 0 Warnings: 0

@@ -1,8 +1,23 @@
+/* Copyright (C) 2021-2022 Talend Inc. - www.talend.com
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Library General Public
+   License as published by the Free Software Foundation; either
+   version 2 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Library General Public License for more details.
+
+   You should have received a copy of the GNU Library General Public
+   License along with this library; if not, write to the Free
+   Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02111-1301, USA */
 /**
 * MySQL / MariaDB Binlog capture
+  date		10/05/2022
 *
-* @author	Gamma-soft
-* @date		10/05/2022
 */
 
 #include "StdAfx.h"
@@ -30,7 +45,7 @@ static const double UNIT_PER_SECOND = 10000000;
 
 #define NOT_EXIST				-1
 
-#define COMPANY					"GammaSoft"
+#define COMPANY					"Talend"
 #define PROJECT					"DataDistribution"
 #define PROCESS_IDENTITY		"ddMySqlBinLogCapture"
 #define SECTION_DDFOR			"DD_for_MySql"
@@ -522,7 +537,7 @@ void dd_log(char *msg)
 /**
  * Copies the first size characters of source to destination.
  * if nullChar is true, a terminating null character is added at the end of destination.
- * @returns Returns à pointer to destination.
+ * @returns Returns ï¿½ pointer to destination.
  */
 char* ddstrncpy(char* destination, const char *source, int size, bool nullChar)
 {
@@ -571,7 +586,7 @@ void cpyrtrim(char *destination, const char* source, unsigned int size)
  *
  * Copies the string pointed by source into the array pointed by dest
  * Convert uppercase to lowercase
- * source must be à string with terminating null-characters
+ * source must be ï¿½ string with terminating null-characters
  * A terminating null character is added at the end of dest
  * if length of source >  iSizeDest only the iSizeDest-1 bytes will be copied
  *
@@ -809,7 +824,7 @@ bool SendMessageToLogReader(char *pszProcessSender, int iMessage)
 			printf("%s\n", g_szbuffer_Tmp);
 			return false;
 		}
-		// The named pipe is busy. Let’s wait for 2 seconds. 
+		// The named pipe is busy. Letï¿½s wait for 2 seconds. 
 		if (!WaitNamedPipe((LPSTR)g_szPipeName, 2000))
 		{
 			dwError = GetLastSystemError();
@@ -893,8 +908,8 @@ bool LoadMySQLLib(char *pszLibName, char *pszMsg)
 			NULL,                    // source
 			dwError,           // code d'erreur
 			MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
-			szErrorMsg,           // où stocker la description  
-			sizeof(szErrorMsg),  // taille minimale à retourner
+			szErrorMsg,           // oï¿½ stocker la description  
+			sizeof(szErrorMsg),  // taille minimale ï¿½ retourner
 			0);
 
 		if (pszMsg)
