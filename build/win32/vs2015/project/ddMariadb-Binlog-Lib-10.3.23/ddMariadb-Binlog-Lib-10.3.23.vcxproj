@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\source\opensource\ddBinlogLib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\source\opensource\mariadb\10.3.23\client\ddmysqlbinlog.cc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MariaDBBinlog10323</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>ddMariadb-Binlog-Lib-10.3.23</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\mysys_ssl;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\sql;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\strings;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\zlib;$(SolutionDir)..\..\..\..\source\ddlib;$(SolutionDir)..\..\..\..\source\opensource;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\libmariadb\libmariadb\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys_ssl\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\dbug\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\zlib\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\strings\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\$(Configuration);$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\taocrypt\$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\..\..\..\Tmp\windows\win32\vs2015\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\mariadb-10.3.23-build\\include;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\mysys_ssl;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\sql;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\strings;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\MariaDB-10.3.23-source\libmariadb\zlib;$(SolutionDir)..\..\..\..\source\ddlib;$(SolutionDir)..\..\..\..\source\opensource;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\libmariadb\libmariadb\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\mysys_ssl\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\dbug\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\zlib\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\strings\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\Release;$(SolutionDir)..\..\..\..\source_ext\opensource\mariadb\MariaDB_10_3_23\\mariadb-10.3.23-build\extra\yassl\taocrypt\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;ENABLED_DEBUG_SYNC;_CONSOLE;BINLOG_EXPORTS;_CRT_SECURE_NO_WARNINGS;DBUG_OFF;HAVE_YASSL;YASSL_PREFIX;HAVE_OPENSSL;MULTI_THREADED;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0A00;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_NONSTDC_NO_WARNINGS;DBUG_TRACE;HAVE_CONFIG_H;HAVE_DLOPEN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>mariadbclient.lib;mysys.lib;mysys_ssl.lib;dbug.lib;zlib.lib;strings.lib;yassl.lib;taocrypt.lib;shlwapi.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>BINLOG_EXPORTS;WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;DBUG_OFF;HAVE_YASSL;YASSL_PREFIX;HAVE_OPENSSL;MULTI_THREADED;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINNT=0x0A00;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_NONSTDC_NO_WARNINGS;DBUG_TRACE;HAVE_CONFIG_H;HAVE_DLOPEN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DisableSpecificWarnings>4800</DisableSpecificWarnings>
+      <TreatSpecificWarningsAsErrors>4099;4700;4311;4477;4302;4090</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>mariadbclient.lib;mysys.lib;mysys_ssl.lib;dbug.lib;zlib.lib;strings.lib;yassl.lib;taocrypt.lib;shlwapi.lib;IPHLPAPI.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) $(SolutionDir)..\bin\$(Configuration)\$(TargetName)$(TargetExt)
+copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\$(TargetName)$(TargetExt)
+copy $(OutDir)$(TargetName)$(TargetExt) D:\DataDistribution\MySQL\ddBinlogLib.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

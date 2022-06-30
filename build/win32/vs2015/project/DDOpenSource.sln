@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3", "sqlite3\sqlite3.vcxproj", "{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ddMariadb-3.2.6", "ddMariadb-3.2.6\ddMariadb-3.2.6.vcxproj", "{C285903F-B411-4C50-82D7-FCD0FB11D34C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ddMariadb-Binlog-Lib-10.3.23", "ddMariadb-Binlog-Lib-10.3.23\ddMariadb-Binlog-Lib-10.3.23.vcxproj", "{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ddMySqlBinLogCapture", "ddMySqlBinLogReader\ddMySqlBinLogCapture.vcxproj", "{8F29714B-F516-4A00-A858-6357E8327041}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Debug|x64.ActiveCfg = Debug|x64
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Debug|x64.Build.0 = Debug|x64
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Debug|x86.ActiveCfg = Debug|Win32
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Debug|x86.Build.0 = Debug|Win32
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Release|x64.ActiveCfg = Release|x64
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Release|x64.Build.0 = Release|x64
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Release|x86.ActiveCfg = Release|Win32
+		{62B9EF73-CA91-4D7C-9C76-57BCD2F69D18}.Release|x86.Build.0 = Release|Win32
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Debug|x64.ActiveCfg = Debug|x64
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Debug|x64.Build.0 = Debug|x64
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Debug|x86.ActiveCfg = Debug|Win32
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Debug|x86.Build.0 = Debug|Win32
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Release|x64.ActiveCfg = Release|x64
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Release|x64.Build.0 = Release|x64
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Release|x86.ActiveCfg = Release|Win32
+		{C285903F-B411-4C50-82D7-FCD0FB11D34C}.Release|x86.Build.0 = Release|Win32
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Debug|x64.ActiveCfg = Debug|x64
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Debug|x64.Build.0 = Debug|x64
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Debug|x86.Build.0 = Debug|Win32
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Release|x64.ActiveCfg = Release|x64
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Release|x64.Build.0 = Release|x64
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Release|x86.ActiveCfg = Release|Win32
+		{B6109A91-F0F2-44C4-9A49-DA96ECC5E335}.Release|x86.Build.0 = Release|Win32
+		{8F29714B-F516-4A00-A858-6357E8327041}.Debug|x64.ActiveCfg = Debug|x64
+		{8F29714B-F516-4A00-A858-6357E8327041}.Debug|x64.Build.0 = Debug|x64
+		{8F29714B-F516-4A00-A858-6357E8327041}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F29714B-F516-4A00-A858-6357E8327041}.Debug|x86.Build.0 = Debug|Win32
+		{8F29714B-F516-4A00-A858-6357E8327041}.Release|x64.ActiveCfg = Release|x64
+		{8F29714B-F516-4A00-A858-6357E8327041}.Release|x64.Build.0 = Release|x64
+		{8F29714B-F516-4A00-A858-6357E8327041}.Release|x86.ActiveCfg = Release|Win32
+		{8F29714B-F516-4A00-A858-6357E8327041}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
